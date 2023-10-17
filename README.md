@@ -18,7 +18,7 @@ To get started with this project, follow these steps:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/ChakraMang/Career-Page.git
 2. Move to folder
 
     ```bash
