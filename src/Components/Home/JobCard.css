@@ -1,0 +1,60 @@
+.job-card-view {
+    box-shadow: 0 4px 5px 3px rgba(255, 255, 255, 0.8) !important;
+    color: rgb(0, 0, 0) !important;
+    background-color: transparent !important;
+    opacity: 0.9 !important;
+    transition: all 0.5s ease 0s !important;
+    height: 100% !important;
+    
+  }
+  .job-card-view:hover {
+    transform: scale(1.02) !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 4px 5px rgb(175, 174, 170) !important;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-subTitile {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-industry {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-location,
+  .card-experience {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-location svg,
+  .card-experience svg {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .card-link {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .card-link:hover {
+    color: #0056b3;
+  }
+  

@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Navbar from './Components/NavBar/NavBar';
+import Filters from './Components/Filters/Filters'
+import Home from './Components/Home/Home';
+import JobCard from './Components/Home/JobCard';
+import {jobsData} from './data/data'; // Import your job data
 
 function App() {
+  const [jobs, setJobs] = useState(jobsData);
+
+  // Define filtering functions here
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Navbar />
+      <Home/>
     </div>
   );
 }

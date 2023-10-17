@@ -1,0 +1,73 @@
+.home {
+  padding: 1rem;
+}
+
+.home-filter {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.div-filter-title,
+.div-filter-location,
+.div-filter-timeType,
+.div-filter-jobType,
+.div-filter-industry {
+  flex: 1;
+  min-width: 200px;
+}
+
+.filter-title,
+.filter-location,
+.filter-type,
+.filter-jobType,
+.filter-industry {
+  width: 100%;
+}
+
+.job-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Adjust the gap as needed */
+  }
+
+.card {
+  border: 1px solid #e0e0e0;
+  padding: 1rem;
+  transition: box-shadow 0.3s;
+  width: 100%;
+  min-width: 200px;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.job-cards-col  {
+    min-height: 200px;
+    min-width: 400px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    height: auto !important;
+  }
+
+/* Add responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .home-filter {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .div-filter-title,
+  .div-filter-location,
+  .div-filter-timeType,
+  .div-filter-jobType,
+  .div-filter-industry {
+    min-width: 100%;
+  }
+}
